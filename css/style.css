@@ -95,7 +95,9 @@
 input[type=number] {
   -moz-appearance:textfield; /* Firefox */
 }
-
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
@@ -566,11 +568,7 @@ body { background: var(--white); }
   display: flex;
   transition: all 1s ease;
 }
-.form-signin {
-  background-color: white;
-  padding: 20px;
-  border-radius: 16px;
-}
+
 .package-form {
   width: 500px;
   background-color: white;
